@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product and Company Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,10 +25,11 @@
         <div class="center-column">
             <div class="banner-image">
                 <!-- image goes here -->
+                <img src="images/authenticae.png" alt="Logo">
 
             </div>
 
-            <div class="link-wrapper">
+            <div class="links-wrapper">
                 <div class="nav-link">
                     <a href="product_details.html">Create New</a>
                 </div>
@@ -52,9 +54,27 @@
             </div>
 
             <div class="contact-icon">
-                
+
             </div>
         </div>
+    </div>
+
+    <div class="page-container">
+        <div class="content-wrapper">
+            <form class="form-wrapper" action="#" method="POST">
+                <label for="comp_name">Company Name: </label> <input type="text" name="companyname" id="comp_name">
+                <label for="comp_add">Company Address: </label> <textarea name="companyaddress" id="comp_add" cols="30" rows="10"></textarea>
+                <label for="client">Client Name: </label> <input type="text" name="clientname" id="client">
+                <label for="tesname">Test Name: </label> <input type="text" name="testname" id="tesname">
+                <label for="item">Test Item: </label> <input type="text" name="testitem" id="item">
+                
+            </form>
+            <form class="submit-button" action="#" method="POST">
+                <input type="submit" name="submit">
+            </form>
+            
+        </div>
+
     </div>
 
     

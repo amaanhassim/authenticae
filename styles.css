@@ -1,0 +1,150 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+/* nav styling */
+
+.navigation-wrapper {
+    background-color: #396E79;
+    /* height of the navigation-wrapper increases to 190px */
+    height: 190px;
+    /* flexbox this is the container */
+    display: flex;
+    /* evenly distribute the columns so that there is 3 columns left center and right*/
+    justify-content: space-between;
+    /* vertically aligns the items in the center */
+    align-items: center;
+    /* padding for top and bottom is 60px and left and right 100px */
+    padding: 60px 100px;
+}
+
+/* left column styling */
+
+/* .navigation-wrapper > .left-column {
+    display: flex;
+    align-items: center;
+} */
+
+.links-wrapper > .nav-link a {
+    /* color of nav links changed to white from blue */
+    color: white;
+}
+
+/* center column styling */
+
+.navigation-wrapper > .center-column {
+    display: grid;
+    /* want 1 column so only 1fr  */
+    grid-template-columns: 1fr;
+    /* gap between the img and the nav links */
+    grid-gap: 42px;
+    /* not enough width for links to be spaced out hence change width of center
+    container to 500px */
+    width: 500px;
+}
+
+.navigation-wrapper > .center-column > .banner-image {
+    display: flex;
+    /* centers the img as when the above is done it is no longer centered */
+    justify-content: center;
+}
+
+.navigation-wrapper > .center-column > .banner-image img {
+    /* original width was 376px changed to 210px */
+    width: 210px;
+}
+
+.links-wrapper {
+    /* links are stacked ontop of each other 
+    setting display to flex will put them into a line but not spaced out */
+    display: flex;
+    /* done to give space between each link */
+    justify-content: space-between;
+    /* vertically centers the nav links */
+    align-items: center;
+}
+
+.links-wrapper > .nav-link {
+    /* width of the nav-link container made it all standard 85px */
+    width: 97px;
+    /* center in the nav-link container */
+    text-align: center;
+}
+
+.links-wrapper > .nav-link a {
+    /* font color of the links is white */
+    color: white;
+    /* no underline of the nav links */
+    text-decoration: none;
+    /* how long the transition effect will take to transform */
+    transition: 0.5s;
+}
+
+.links-wrapper > .nav-link a:hover {
+    /* when the mouse hovers over the nav links the color changes */
+    color: #cea135;
+    /* when the mouse hovers over the nav links the spacing of the letters change by 1px */
+    letter-spacing: 1px;
+}
+
+
+/* product_details.html page content styling */
+
+.page-container{
+    /* felx box used to center the container */
+    display: flex;
+    /* centers the container in the middle of the page */
+    justify-content: center;
+    /* was no space beween the nav bar and the container hence margin top of 40px */
+    margin-top: 40px;
+}
+ 
+.page-container > .content-wrapper > .form-wrapper {
+    /* want to have 2 columns first column for the labels second column for the inout boxes hence grid layout */
+    display: grid;
+    /* 2 colums  */
+    grid-template-columns: 1fr 1fr;
+    /* gap between each row is 40px */
+    grid-gap: 40px;
+    /* column gap is 10px */
+    grid-column-gap: 10px;
+
+}
+
+.page-container > .content-wrapper > .form-wrapper > input, textarea {
+    /* og height of the input and textarea boxes was too small hence increased to 44px */
+    height: 44px;
+    /* font size was too small so increased */
+    font-size: 1.1em;
+}
+
+.page-container > .content-wrapper > .form-wrapper > label {
+    /* font size was too small hence increased */
+    font-size: 1.1em;
+    /* used flex box to vertically center the labels */
+    display: flex;
+    /* vertically centralising */
+    align-items: center;
+}
+
+
+.page-container > .content-wrapper > .submit-button {
+    /* had to put submit button in its own container and center it */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-container > .content-wrapper > .submit-button > input {
+    /* made the submit button the same size as previously */
+    width: 259.6px;
+    height: 44px;
+    /* increase font size */
+    font-size: 1.1em;
+    /* need space between the form and the submit button */
+    margin-top: 40px;
+    /* didnt want the submit button to be at the very end of the page or footer */
+    margin-bottom: 40px;
+}
+
+
