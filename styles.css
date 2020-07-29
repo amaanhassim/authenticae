@@ -1,11 +1,17 @@
 body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
+    background-image: url(images/cool-background.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* nav styling */
 
 .navigation-wrapper {
     background-color: #396E79;
+    /* background-color: #A45A38; */
     /* height of the navigation-wrapper increases to 190px */
     height: 190px;
     /* flexbox this is the container */
@@ -66,7 +72,7 @@ body {
 
 .links-wrapper > .nav-link {
     /* width of the nav-link container made it all standard 85px */
-    width: 97px;
+    width: 110px;
     /* center in the nav-link container */
     text-align: center;
 }
@@ -97,7 +103,9 @@ body {
     justify-content: center;
     /* was no space beween the nav bar and the container hence margin top of 40px */
     margin-top: 40px;
+  
 }
+
  
 .page-container > .content-wrapper > .form-wrapper {
     /* want to have 2 columns first column for the labels second column for the inout boxes hence grid layout */
@@ -125,6 +133,7 @@ body {
     display: flex;
     /* vertically centralising */
     align-items: center;
+    letter-spacing: 1px;
 }
 
 
@@ -147,4 +156,15 @@ body {
     margin-bottom: 40px;
 }
 
+
+/* footer styling */
+
+footer{
+    height: 100px;
+    background-color: #396E79;
+    /* background-color: #A45A38; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
