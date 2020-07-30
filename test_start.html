@@ -44,6 +44,10 @@
                 <div class="nav-link">
                     <a href="#">Test End</a>
                 </div>
+
+                <div class="nav-link">
+                    <a href="#">Sample Sheet</a>
+                </div>
             </div>
         </div>
 
@@ -85,9 +89,9 @@
 
             <h2 style="margin-top: 40px; margin-bottom: 40px; text-decoration: underline; text-align: center;">Sample Data</h2>
 
-            <form class="form-wrapper" action="#" method="POST">
+            <form class="form-wrapper" action="#" method="POST" oninput="mean.value=((parseFloat(thick1.value)+parseFloat(thick2.value)+parseFloat(thick3.value) + parseFloat(thick4.value) + parseFloat(thick5.value))/5.0).toFixed(3)" >
                 <label for="des">Description of material</label> <textarea name="description" id="des" cols="30" rows="10"></textarea>
-                <label for="thmat">Thickness of material</label> <div class="sample-boxes"><input type="text" name="thick1" id="thmat"> <input type="text" name="thick2" id="thmat"> <input type="text" name="thick3" id="thmat"></div>
+                <label for="thmat">Thickness of material</label> <div class="sample-boxes"><input type="text" name="thick1" id="thmat"> <input type="text" name="thick2" id="thmat"> <input type="text" name="thick3" id="thmat"> <input type="text" name="thick4" id="thmat"> <input type="text" name="thick5" id="thmat"> &nbsp;&nbsp;&nbsp; <label style="letter-spacing: 1px; font-size: 1.05em;" for="me"><strong>Mean:</strong></label>&nbsp;<output name="mean" id="me"></output></div>
                 <label for="clbefore">Weight of clicked material (before drying): </label> <input type="text" name="clickbefore" id="clbefore"><!--<div class="sample-boxes"><input type="text" name="clickbefore1" id="clbefore"> <input type="text" name="clickbefore2" id="clbefore"> <input type="text" name="clickbefore3" id="clbefore"></div> -->
                 <label for="clafter">Weight of clicked material (after drying): </label> <input type="text" name="clickafter" id="clafter">
                 <label for="pie">Number of pieces: </label> <input type="text" name="numofpieces" id="pie">

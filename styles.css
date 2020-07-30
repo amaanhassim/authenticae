@@ -106,6 +106,8 @@ body {
   
 }
 
+
+
  
 .page-container > .content-wrapper > .form-wrapper {
     /* want to have 2 columns first column for the labels second column for the inout boxes hence grid layout */
@@ -160,8 +162,8 @@ body {
 /* test_start styling */
 .page-container > .content-wrapper > .form-wrapper > .sample-boxes > input {
     height: 44px;
-    width: 100px;
-    font-size: 1.1em;
+    width: 40px;
+    font-size: 1em;
 }
 
 
