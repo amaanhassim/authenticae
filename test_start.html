@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Start Test</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-column">
+            <div class="icon">
+
+            </div>
+
+            <div class="contact-hours-wrapper">
+
+            </div>
+
+        </div>
+
+        <!-- link wrapper -->
+        <div class="center-column">
+            <div class="banner-image">
+                <!-- image goes here -->
+                <img src="images/authenticae.png" alt="Logo">
+
+            </div>
+
+            <div class="links-wrapper">
+                <div class="nav-link">
+                    <a href="product_details.html">Create New</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="test_start.html">Init S&C</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="#">Lab Analysis</a>
+                </div>
+
+                <div class="nav-link">
+                    <a href="#">Test End</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="address-wrapper">
+            
+            </div>
+
+            <div class="contact-icon">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page-container">
+        <div class="content-wrapper">
+            <form class="form-wrapper" action="#" method="POST">
+                <label for="cust_ref">Customer Reference Number: </label> <input type="text" name="custref" id="cust_ref">
+                <label for="thstart">Start Date of Thermophilic Stage: </label> <input type="date" name="thermostart" id="thstart">
+                <label for="messtart">Start date of Mesophilic Stage: </label> <input type="date" name="mesostart" id="messtart">
+                <label for="reweight">Reactor Weight: </label> <input type="text" name="reactorweight" id="reweight">
+            </form>
+
+            <h2 style="margin-top: 40px; text-decoration: underline; text-align: center; margin-bottom: 40px;">Compost Initial Analysis</h2>
+
+            <form class="form-wrapper" action="#" method="POST">
+                <label for="drymass">DM content from NRM report: </label> <input type="text" name="DMNRM" id="drymass">
+                <label for="stC/N">Start C/N ratio: </label> <input type="text" name="startC/N" id="stC/N">
+                <label for="stpH">Start pH value: </label> <input type="text" name="startpH" id="stpH">
+                <label for="intdish">Initial dish mass: </label> <input type="text" id="intdish">
+                <label for="d+sstart">Dish + Sample (start): </label> <input type="text" name="dishandsamplestart" id="d+sstart">
+                <label for="d+send">Dish + Sample (end): </label> <input type="text" name="dishandsampleend" id="d+send">
+                <label for="calwei">Calcinated Weight: </label> <input type="text" name="calcinatedweight" id="calwei">
+                <label for="NRMsDM">NRM start DM: </label> <input type="text" name="NRMstartDM" id="NRMsDM">
+                <label for="NRMsVS">NRM start VS: </label> <input type="text" name="NRMstartVS" id="NRMsVS">
+
+            </form>
+
+            <h2 style="margin-top: 40px; margin-bottom: 40px; text-decoration: underline; text-align: center;">Sample Data</h2>
+
+            <form class="form-wrapper" action="#" method="POST">
+                <label for="des">Description of material</label> <textarea name="description" id="des" cols="30" rows="10"></textarea>
+                <label for="thmat">Thickness of material</label> <div class="sample-boxes"><input type="text" name="thick1" id="thmat"> <input type="text" name="thick2" id="thmat"> <input type="text" name="thick3" id="thmat"></div>
+                <label for="clbefore">Weight of clicked material (before drying): </label> <input type="text" name="clickbefore" id="clbefore"><!--<div class="sample-boxes"><input type="text" name="clickbefore1" id="clbefore"> <input type="text" name="clickbefore2" id="clbefore"> <input type="text" name="clickbefore3" id="clbefore"></div> -->
+                <label for="clafter">Weight of clicked material (after drying): </label> <input type="text" name="clickafter" id="clafter">
+                <label for="pie">Number of pieces: </label> <input type="text" name="numofpieces" id="pie">
+                <label for="aut">AUT Reference: </label> <input type="text" name="AUTreference" id="aut">
+            </form>
+
+            <h2 style="margin-top: 40px; margin-bottom: 40px; text-decoration: underline; text-align: center;">Innoculum Data</h2>
+
+            <form class="form-wrapper" action="#" method="POST">
+                <label for="refino">Innoculum Data Reference: </label> <input type="text" name="innoculumref" id="refino">
+            </form>
+
+            <form class="submit-button" action="#" method="POST">
+                <input type="submit" name="submit">
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer>
+        &copy; 2020 Authenticae
+    </footer>
+    
+</body>
+</html>
