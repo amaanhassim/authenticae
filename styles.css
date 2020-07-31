@@ -1,3 +1,14 @@
+
+/* css reset so that it looks the same in all browsers */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    list-style: none;
+}
+
 body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
