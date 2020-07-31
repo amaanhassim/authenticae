@@ -103,6 +103,7 @@ body {
     justify-content: center;
     /* was no space beween the nav bar and the container hence margin top of 40px */
     margin-top: 40px;
+    
   
 }
 
@@ -189,6 +190,52 @@ body {
     width: 100px;
     font-size: 1em;
 }
+
+
+
+/* sample sheet styling */
+.page-container > .sample-info > table{
+    font-family: sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.page-container > .sample-info{
+    width: 75%;
+}
+
+.page-container > .test-table {
+    width: 90%;
+}
+
+
+.page-container > .sample-info > table, tr {
+    background-color: #f8f8f8;
+}
+
+.sam{
+    background-color: #1b1e24;
+    color: #D5DDE5;
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 100;
+    padding: 15px;
+}
+
+.sinfo{
+    
+    text-align: center;
+    padding: 15px;
+}
+
+.sinfo:nth-child(odd) {
+    background-color: #EBEBEB;
+}
+
+.info-row{
+    border: 1px solid black;
+}
+
 
 
 /* footer styling */
