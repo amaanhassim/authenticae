@@ -197,7 +197,8 @@ body {
 .page-container > .sample-info > table{
     font-family: sans-serif;
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 40px 0px;
 }
 
 .page-container > .sample-info{
@@ -209,7 +210,7 @@ body {
 }
 
 
-.page-container > .sample-info > table, tr {
+.page-container > .sample-info > tr {
     background-color: #f8f8f8;
 }
 
@@ -219,22 +220,89 @@ body {
     font-size: 1em;
     letter-spacing: 1px;
     font-weight: 100;
-    padding: 15px;
+    padding: 10px;
+    width: 200px;
+    
 }
 
 .sinfo{
     
     text-align: center;
-    padding: 15px;
+    padding: 10px;
+    font-size: 20px;
 }
 
 .sinfo:nth-child(odd) {
     background-color: #EBEBEB;
 }
 
+.sinfo:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
 .info-row{
     border: 1px solid black;
 }
+
+
+.test-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.test-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.test-section > .test-form > table {
+    width: 90%;
+    font-family: sans-serif;
+}
+
+.test-header{
+    background-color: #1b1e24;
+    color: #D5DDE5;
+    font-size: 1.3em;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding: 2px;
+
+}
+
+.test-data{
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+
+}
+
+.test-input{
+    height: 40px;
+    width: 164px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+.sample-submit{
+    width: 200.6px;
+    height: 44px;
+    font-size: 1.1em;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
 
 
 

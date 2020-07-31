@@ -65,7 +65,7 @@
         </div>
     </div>
     <div class="page-container">
-        <!-- <div class="table-wrapper"> -->
+        
             <div class="sample-info">
                 <table>
                     <tr class="info-row">
@@ -84,25 +84,313 @@
                     </tr>
                 </table>
             </div>
-
-            <!-- <div class="test-table">
-                <table>
-                    <tr class="test-row">
-                        <th class="test-header">Day</th>
-                        <th class="test-header">Date</th>
-                        <th class="test-header">Target</th>
-                        <th class="test-header">Mix / No Mix</th>
-                        <th class="test-header">Weight of container and compost with lid</th>
-                        <th class="test-header">Weight loss</th>
-                        <th class="test-header">Weight adjusted to</th>
-                        <th class="test-header">Weight difference from target</th>
-
-                    </tr>
-                </table>
-
-            </div> -->
-        <!-- </div> -->
+        
     </div>
+
+    <div class="test-section">
+        <form class="test-form" action="#" method="POST">
+            <table>
+                <tr class="test-row">
+                    <th class="test-header">Day</th>
+                    <th class="test-header">Date</th>
+                    <th class="test-header">Target</th>
+                    <th class="test-header">Mix / No Mix</th>
+                    <th class="test-header">Weight of container <br>and compost with lid</th>
+                    <th class="test-header">Weight loss</th>
+                    <th class="test-header">Weight adjusted to</th>
+                    <th class="test-header">Weight difference from target</th>
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">0</td>
+                    <td class="test-data">0/0/0</td>
+                    <td class="test-data">0</td>
+                    <td class="test-data">Mix</td>
+                    <td colspan="4" class="test-data" style="background-color: darkorange;">START OF TEST</td>
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">1</td>
+                    <td class="test-data">0/0/0</td>
+                    <td class="test-data">0</td>
+                    <td class="test-data">Mix</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td class="test-data">0</td>
+                    <td class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">2</td>
+                    <td class="test-data">0/0/0</td>
+                    <td class="test-data">0</td>
+                    <td class="test-data">Mix</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td class="test-data">0</td>
+                    <td class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">3</td>
+                    <td class="test-data">0/0/0</td>
+                    <td class="test-data">0</td>
+                    <td class="test-data">Mix</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td class="test-data">0</td>
+                    <td class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">4</td>
+                    <td class="test-data">0/0/0</td>
+                    <td class="test-data">0</td>
+                    <td class="test-data">Mix</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td class="test-data">0</td>
+                    <td class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">7</td>
+                    <td class="test-data">0/0/0</td>
+                    <td class="test-data">0</td>
+                    <td class="test-data">Mix</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td class="test-data">0</td>
+                    <td class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td style="background-color: orange;" class="test-data">8</td>
+                    <td style="background-color: orange;" class="test-data">0/0/0</td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data">No Mix</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">9</td>
+                    <td class="test-data">0/0/0</td>
+                    <td class="test-data">0</td>
+                    <td class="test-data">Mix</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td class="test-data">0</td>
+                    <td class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td style="background-color: orange;" class="test-data">10</td>
+                    <td style="background-color: orange;" class="test-data">0/0/0</td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data">No Mix</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">11</td>
+                    <td class="test-data">0/0/0</td>
+                    <td class="test-data">0</td>
+                    <td class="test-data">Mix</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td class="test-data">0</td>
+                    <td class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">14</td>
+                    <td class="test-data">0/0/0</td>
+                    <td class="test-data">0</td>
+                    <td class="test-data">Mix</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td class="test-data">0</td>
+                    <td class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td style="background-color: orange;" class="test-data">16</td>
+                    <td style="background-color: orange;" class="test-data">0/0/0</td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data">No Mix</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td style="background-color: orange;" class="test-data">18</td>
+                    <td style="background-color: orange;" class="test-data">0/0/0</td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data">No Mix</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td style="background-color: orange;" class="test-data">21</td>
+                    <td style="background-color: orange;" class="test-data">0/0/0</td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data">No Mix</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td style="background-color: orange;" class="test-data">23</td>
+                    <td style="background-color: orange;" class="test-data">0/0/0</td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data">No Mix</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td style="background-color: orange;" class="test-data">25</td>
+                    <td style="background-color: orange;" class="test-data">0/0/0</td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data">No Mix</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td style="background-color: orange;" class="test-data">28</td>
+                    <td style="background-color: orange;" class="test-data">0/0/0</td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data">No Mix</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td style="background-color: #00a2ed;" colspan="8" class="test-data">80% of initial weight</td>
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">30</td>
+                    <td class="test-data">0/0/0</td>
+                    <td class="test-data">0</td>
+                    <td class="test-data">Mix</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td class="test-data">0</td>
+                    <td class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td style="background-color: orange;" class="test-data">32</td>
+                    <td style="background-color: orange;" class="test-data">0/0/0</td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data">No Mix</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td style="background-color: orange;" class="test-data">35</td>
+                    <td style="background-color: orange;" class="test-data">0/0/0</td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data">No Mix</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td style="background-color: orange;" class="test-data">38</td>
+                    <td style="background-color: orange;" class="test-data">0/0/0</td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data">No Mix</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td style="background-color: orange;" class="test-data">42</td>
+                    <td style="background-color: orange;" class="test-data">0/0/0</td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data">No Mix</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                    <td style="background-color: orange;" class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td style="background-color: orange;" class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">45</td>
+                    <td class="test-data">0/0/0</td>
+                    <td colspan="2" class="test-data">Dry 45d weight</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td class="test-data">0</td>
+                    <td colspan="2" style="background-color: black;" class="test-data"></td>
+                    
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">23</td>
+                    <td class="test-data">0/0/0</td>
+                    <td class="test-data">0</td>
+                    <td class="test-data">Mix</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td class="test-data">0</td>
+                    <td class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">24</td>
+                    <td class="test-data">0/0/0</td>
+                    <td class="test-data">0</td>
+                    <td class="test-data">Mix</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td class="test-data">0</td>
+                    <td class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">25</td>
+                    <td class="test-data">0/0/0</td>
+                    <td class="test-data">0</td>
+                    <td class="test-data">Mix</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td class="test-data">0</td>
+                    <td class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">26</td>
+                    <td class="test-data">0/0/0</td>
+                    <td class="test-data">0</td>
+                    <td class="test-data">Mix</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td class="test-data">0</td>
+                    <td class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td class="test-data">0</td>
+                </tr>
+                <tr class="test-row">
+                    <td class="test-data">27</td>
+                    <td class="test-data">0/0/0</td>
+                    <td class="test-data">0</td>
+                    <td class="test-data">Mix</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
+                    <td class="test-data">0</td>
+                    <td class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
+                    <td class="test-data">0</td>
+                </tr>
+                
+
+
+            </table>
+            <input class="sample-submit" type="submit">
+        </form>
+    </div>
+
+
+    <footer>
+        &copy; 2020 Authenticae
+    </footer>
     
 </body>
 </html>
