@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Start Test</title>
 </head>
@@ -89,9 +90,9 @@
 
             <h2 style="margin-top: 40px; margin-bottom: 40px; text-decoration: underline; text-align: center;">Sample Data</h2>
 
-            <form class="form-wrapper" action="#" method="POST" oninput="mean.value=((parseFloat(thick1.value)+parseFloat(thick2.value)+parseFloat(thick3.value) + parseFloat(thick4.value) + parseFloat(thick5.value))/5.0).toFixed(3)" >
+            <form class="form-wrapper" action="#" method="POST">
                 <label for="des">Description of material</label> <textarea name="description" id="des" cols="30" rows="10"></textarea>
-                <label for="thmat">Thickness of material</label> <div class="sample-boxes"><input type="text" name="thick1" id="thmat"> <input type="text" name="thick2" id="thmat"> <input type="text" name="thick3" id="thmat"> <input type="text" name="thick4" id="thmat"> <input type="text" name="thick5" id="thmat"> &nbsp;&nbsp; <label style=" font-size: 1.05em;" for="me"><strong>Mean:</strong></label>&nbsp;<output name="mean" id="me"></output></div>
+                <label for="thmat">Thickness of material</label> <div class="sample-boxes"><input class="th" type="text" name="thick1" id="thmat"> <input class="th" type="text" name="thick2" id="thmat"> <input class="th" type="text" name="thick3" id="thmat"> <input class="th" type="text" name="thick4" id="thmat"> <input class="th" type="text" name="thick5" id="thmat"> &nbsp;&nbsp; <label style=" font-size: 1.05em;" for="me"><strong>Mean:</strong></label>&nbsp;<input style="width: 50px;" class="thickmean" type="text" name="mean" id="me" readonly></input></div>
                 <label style="align-items: flex-end;" for="clbefore">Weight of clicked material: <br> (before drying) </label> <div class="sample-boxes2"><h3>A</h3> <h3>B</h3> <h3>C</h3><input type="text" name="clickbefore1" id="clbefore"><input type="text" name="clickbefore2" id="clbefore"> <input type="text" name="clickbefore3" id="clbefore"></div>
                 <label for="clafter">Weight of clicked material: <br>(after drying): </label> <div class="sample-boxes2"><input type="text" name="clickafter1" id="clbefore"> <input type="text" name="clickafter2" id="clbefore"> <input type="text" name="clickafter3" id="clbefore"></div>
                 <label for="wet">Weight taken for test: </label> <div class="sample-boxes2"><input type="text" name="weighttaken1" id="wet"> <input type="text" name="weighttaken2" id="wet"> <input type="text" name="weighttaken3" id="wet"></div>
@@ -111,6 +112,19 @@
         </div>
     </div>
 
+    <script>
+        $('.sample-boxes').on('input', '.th', function(){
+            var totalSum = 0;
+            $('.sample-boxes .th').each(function(){
+                var inputVal = $(this).val();
+                if($.isNumeric(inputVal)){
+                    totalSum += parseFloat(inputVal);
+                }
+            });
+            var avg = ((totalSum / 5.0).toFixed(3));
+            $('#me').val(avg)
+        });
+    </script>
 
 
 
