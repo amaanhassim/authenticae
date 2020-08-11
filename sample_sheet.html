@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Sample Sheet</title>
@@ -76,14 +77,17 @@
                         <th class="sam">Serial number of reactor</th>
                     </tr>
                     <tr class="info-row">
-                        <td class="sinfo">0</td>
-                        <td class="sinfo">0</td>
+                        <td class="sinfo"><input class="comp-weight" type="text" name="compostweight"/></td>
+                        <td class="sinfo"><input class="sample" type="text" name="compostweight" id=""/></td>
                         <td class="sinfo">0</td>
                         <td class="sinfo">0</td>
                         <td class="sinfo">0</td>
                     </tr>
                 </table>
             </div>
+
+
+           
         
     </div>
 
@@ -101,6 +105,7 @@
                     <th class="test-header">Weight difference from target</th>
                     <th class="test-header">Observations</th>
                 </tr>
+                
                 <tr class="test-row">
                     <td class="test-data">0</td>
                     <td class="test-data">0/0/0</td>
@@ -111,10 +116,10 @@
                 <tr class="test-row">
                     <td class="test-data">1</td>
                     <td class="test-data">0/0/0</td>
-                    <td class="test-data">0</td>
+                    <td class="test-data"><input type="text" name="target" id="num1"></td>
                     <td class="test-data">Mix</td>
-                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]"></td>
-                    <td class="test-data">0</td>
+                    <td class="test-data"><input class="test-input" type="text" name="weightcon[]" id="num2"></td>
+                    <td class="test-data" id="loss"></td>
                     <td class="test-data"><input class="test-input" type="text" name="wieghtadjust[]"></td>
                     <td class="test-data">0</td>
                     <td class="test-data"><select name="" id="">
@@ -142,6 +147,23 @@
                         <option value="">Compost and sample not normal</option>
                     </select></td>
                 </tr>
+                <script>
+                    function calc() {
+                        var n1 = parseFloat($("#num1").val());
+                        var n2 = parseFloat($("#num2").val());
+                        var ans = n1 - n2;
+                        $("#loss").html(ans);
+                        console.log(ans);
+    
+                    }
+                    function loadevent() {
+                        document.addEventListener('keyup',calc)
+                        
+    
+                    }
+    
+                    document.addEventListener('DOMContentLoaded', loadevent)
+                </script>
                 <tr class="test-row">
                     <td class="test-data">2</td>
                     <td class="test-data">0/0/0</td>
@@ -1795,6 +1817,14 @@
             <input class="sample-submit" type="submit">
         </form>
     </div>
+
+    <script>
+        function weightloss() {
+            var x = document.getElementById('weight1').value;
+            document.getElementById('loss1').value = x;
+
+        }
+    </script>
 
 
     <footer>
